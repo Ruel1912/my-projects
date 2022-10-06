@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Red Hat Display', sans-serif;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1080px]
+    }
+
+    .btn {
+        @apply inline-block mt-3 py-[10px] px-8 shadow-customred bg-lightred text-white text-xl tracking-tight
+    }
+}
+
+.burger {
+    height: 20px;
+    width: 30px;
+    position: relative;
+}
+
+.burger-line {
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 2px;
+    background: #070026;
+    transition: .3s;
+}
+
+.top-line {
+    left: 0;
+    top: 0;
+}
+
+.mid-line {
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bottom-line {
+    left: 0;
+    bottom: 0;
+}
+
+.burger.active > .top-line {
+    transform: translateY(8px) rotate(45deg);
+    transition: .3s;
+}
+
+.burger.active > .mid-line {
+    opacity: 0;
+    transition: .3s;
+}
+
+.burger.active > .bottom-line {
+    transform: translateY(-10px) rotate(-45deg);
+    transition: .3s;
+}

@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {outline: none;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.magic {
+    overflow: hidden;
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+.magic div {
+    transition: all 0.3s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.3s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.3s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.3s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.3s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    animation-name: magic;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-image: url(https://www.culture.ru/storage/images/210fd1ca-3c8f-5d59-b6ba-8d6a15d5c633);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: 1px solid;
+}
+
+.magic div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.magic div:nth-child(2) {
+    animation-delay: 0.1s;
+    top: 90px;
+}
+
+.magic div:nth-child(3) {
+    animation-delay: 0.2s;
+    top: 180px;
+}
+
+.magic div:nth-child(4) {
+    animation-delay: 0.3s;
+    top: 270px;
+}
+
+.magic div:nth-child(5) {
+    animation-delay: 0.4s;
+    top: 360px;
+}
+
+.magic div:nth-child(6) {
+    animation-delay: 0.5s;
+    top: 450px;
+}
+
+.magic div:nth-child(7) {
+    animation-delay: 0.6s;
+    top: 540px;
+}
+
+@keyframes magic{
+    0% {
+        margin-left: 0%;
+        width: 10%;
+    }
+    25% {
+        margin-left: 80%;
+        width: 15%;
+    }
+    50% {
+        margin-left: 5%;
+        width: 20%;
+    }
+    75% {
+        width: 100%;
+    }
+    100% {
+        margin-left: 0%;
+        width: 10%;
+    }
+}
+

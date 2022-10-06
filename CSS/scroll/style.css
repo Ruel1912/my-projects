@@ -1,0 +1,12 @@
+body {background: currentColor;margin: 0;}
+div {background-position: center;background-attachment: fixed;background-size: cover; background-repeat: no-repeat; height: 500px;width: 100%;margin-top: 20%;}
+div:nth-child(1) {background-image: url("https://avatars.mds.yandex.net/get-zen_doc/39788/pub_61955da4f5580d6876aa679c_61955e322efc6150ca41462e/scale_1200");}
+div:nth-child(2) {background-image: url("https://7themes.su/php/imres/resize.php?width=1400&height=1050&cropratio=4:3&image=/_ph/55/368591951.jpg");}
+div:nth-child(3) {background-image: url("https://i.ytimg.com/vi/dmQEIuYAS0I/maxresdefault.jpg");}
+div:nth-child(4) {background-image: url("https://s1.1zoom.ru/big3/798/379129-svetik.jpg");}
+::-webkit-scrollbar-button { background-image: url(""); background-repeat: no-repeat; width: 6px; height: 0px; }
+::-webkit-scrollbar-track { background-color: rgb(255, 255, 255); }
+::-webkit-scrollbar-thumb {border-radius: 5px;background-color: #141517;box-shadow: rgb(255, 255, 255) 0px 1px 1px inset;background-position: center center;background-repeat: no-repeat;}
+::-webkit-resizer { background-image: url(""); background-repeat: no-repeat; width: 7px; height: 0px; }
+::-webkit-scrollbar { width: 6px; }
+::selection {background-color: #141517;color: rgb(255, 255, 255);}

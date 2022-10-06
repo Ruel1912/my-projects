@@ -1,0 +1,122 @@
+* {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #2f3337;
+    margin: 10%;
+}
+
+.element {
+    background: #2f3d5f;
+    border-radius: 8px;
+    width: 200px;
+    height: 70px;
+    box-shadow: inset 0 0 0 2px white;
+}
+
+.line {
+    border-top: 5px solid #9dddff;
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    color: #9dddff;
+}
+
+.just-con-center {
+    display: flex;
+    justify-content: center;
+}
+
+.just-con-f-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.just-con-sp-bet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.just-con-sp-even {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.just-con-sp-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fl-wrap-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-dir-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-dir-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.al-it-center {
+    display: flex;
+    align-items: center;
+}
+
+.al-it-fl-start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.al-it-fl-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.margin {
+    display: flex;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex3 {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+.flex3-1 {
+    display: flex;
+    flex-direction: row;
+    width: unset;
+    height: unset;
+    background: unset;
+}
+
+.flex3-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: unset;
+    background: unset;
+}

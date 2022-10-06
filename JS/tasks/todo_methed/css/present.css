@@ -1,0 +1,17 @@
+.present {
+    padding-top: 30px;
+    background-color: rgb(235 220 245);
+}
+
+.present__title {
+    margin-bottom: 30px;
+}
+
+.present__subtitle {
+    font-size: 28px;
+}
+
+.present__img {
+    display: none;
+}
+
