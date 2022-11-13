@@ -38,6 +38,7 @@ myPromise
   })
 
 //   ПРАКТИКА
+const url = 'https://jsonplaceholder.typicode.com/todos'
 
 const getData = (url) =>
   new Promise((resolve, reject) =>
@@ -47,6 +48,21 @@ const getData = (url) =>
       .catch((error) => reject(error))
   )
 
-getData('https://jsonplaceholder.typicode.com/todos')
+getData(url)
   .then((data) => console.log(data))
   .catch((error) => console.log(error.message))
+
+// ASYNC / AWAIT
+
+const getAsyncData = async (url) => {
+  const res = await fetch(url)
+  const json = await res.json()
+  return json
+}
+
+try {
+  const data = await getAsyncData(url)
+  console.log(data)
+} catch (e) {
+  console.log(e.message)
+}
