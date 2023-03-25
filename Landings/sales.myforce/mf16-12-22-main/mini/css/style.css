@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --blue: #0575e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.47;
+  font-family: "Rubik", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 8.5rem;
+  padding-right: 0;
+}
+
+/* Header */
+nav {
+  width: calc(100% - 12px);
+}
+
+header {
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  transition: color 0.5s ease;
+}
+
+.header__logo:hover,
+.header__logo:active,
+nav li a:hover,
+nav li a:active {
+  color: var(--blue);
+}
+
+.links,
+.header__links {
+  display: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__links li:active,
+.promo__btn:active,
+.send-form:active {
+  transition: transform 0.3s ease-out;
+  transform: scale(0.95);
+}
+.links__tel {
+  font-size: 16px;
+  font-weight: 500;
+}
+.links__btn {
+  padding: 8px 24px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+}
+
+/* Promo */
+
+.main {
+  background: url(../img/promo/bg.jpg) center center/cover no-repeat;
+}
+
+.promo {
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* badge */
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, #00c6fb 0%, #005bea 100%);
+  padding-bottom: 0;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.badge-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.badge__img {
+  width: 36.5rem;
+  height: 36.5rem;
+}
+
+.badge-subtitle {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.badge .links {
+  display: flex;
+  padding-top: 40px;
+}
+
+.badge__footer {
+  position: absolute;
+  bottom: 0;
+  right: 135px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7.5px);
+}
+.promo__title {
+  position: relative;
+  max-width: 745px;
+  margin-top: 95px;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 139%;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.promo__btn {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin-bottom: 116px;
+  padding: 12px 68px;
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--blue);
+  border-radius: 9px;
+}
+
+.promo__btn::after {
+  top: 50%;
+  right: -65px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 102px;
+  height: 25px;
+  background-image: url(../img/promo/arrow.svg);
+  background-repeat: no-repeat;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 66px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .badge {
+    border-radius: 20px;
+  }
+}
+
+/* Modal */
+.modal-content {
+  background: #001a33;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 48px 102px;
+}
+
+.modal svg {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.modal .title {
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.modal .mob-title {
+  display: none;
+}
+
+.modal .sub-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Form */
+.form-validate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.form-group input {
+  width: 100%;
+  color: var(--white);
+  background: transparent;
+  padding: 20px 34px;
+  border: 1px solid var(--white);
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.send-form {
+  margin-top: 34px;
+  width: 100%;
+  border-radius: 9px;
+  background: var(--blue);
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.preloader {
+  display: none;
+}
+
+.preloader img {
+  width: 250px;
+}
+
+input.error {
+  border-color: #f00;
+}
+
+input.success {
+  border-color: #01cc46;
+}
+
+@media (max-width: 1300px) {
+  .badge__footer {
+    padding: 5px 10px;
+    right: 12px;
+  }
+
+  .badge__img {
+    width: 350px;
+    height: 100%;
+  }
+
+  .badge-title {
+    font-size: 12px;
+  }
+
+  .badge-subtitle {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    max-width: 750px;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .header__links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo.mobile {
+    display: unset;
+  }
+
+  .badge .links,
+  .header__logo {
+    display: none;
+  }
+
+  .badge__footer {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .promo {
+    min-height: unset;
+  }
+
+  .promo__title {
+    margin-top: 80px;
+  }
+
+  .promo__btn {
+    margin-bottom: 68px;
+  }
+
+  .badge {
+    border-radius: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      max-width: 500px;
+    }
+
+    .promo__title {
+      font-size: 22px;
+      max-width: 420px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+    }
+
+    .promo__text {
+      max-width: 300px;
+      font-size: 16px;
+    }
+
+    .promo__btn {
+      padding: 12px 60px;
+    }
+
+    .modal-body {
+      padding: 75px 15px;
+    }
+
+    .modal .title {
+      display: none;
+    }
+
+    .modal .mob-title {
+      display: block;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      max-width: 320px;
+    }
+
+    .header__logo.mobile {
+      font-size: 16px;
+    }
+
+    .links__tel {
+      font-size: 12px;
+    }
+
+    .links__btn {
+      font-size: 10px;
+      padding: 8px 16px;
+    }
+
+    .badge__footer {
+      right: 12px;
+      transform: none;
+    }
+
+    .promo__title {
+      max-width: 340px;
+      font-size: 18px;
+    }
+
+    .promo__text {
+      max-width: 270px;
+      font-size: 14px;
+    }
+
+    .modal svg {
+      top: 40px;
+      right: 15px;
+    }
+  }
+}
