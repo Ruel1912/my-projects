@@ -26,10 +26,20 @@
   height: 64px;
 }
 
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
 .black {
   background: deepskyblue;
 }
 
 .white {
   background: #eed4ac;
+}
+
+.selected {
+  background: brown;
 }

@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
-import BoardComponent from './components/BoardComponent';
-import { Board } from './models/Board';
+import React, { useEffect, useState } from 'react'
+import BoardComponent from './components/BoardComponent'
+import { Board } from './models/Board'
 
 const App = () => {
   const [board, setBoard] = useState(new Board())
@@ -10,14 +10,14 @@ const App = () => {
   function restart() {
     const newBoard = new Board()
     newBoard.initCells()
+    newBoard.addFigures()
     setBoard(newBoard)
   }
   return (
-    <div className='app'>
+    <div className="app">
       <BoardComponent board={board} setBoard={setBoard} />
-
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

@@ -1,0 +1,139 @@
+body {
+	overflow: hidden;
+	font-size: 14px;
+	margin: 0;
+}
+
+.maincont {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.gameField {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 560px;
+	height: 560px;
+	border: solid black 1px;
+}
+
+.cell {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	color: rgba(0, 0, 0, 0.0);
+	background-color: rgb(0, 60, 255);
+	content: "1";
+	visibility: visible;
+	user-select: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mine {
+	color: white;
+	content: "-1";
+}
+
+.mineImage {
+	background-image: url(Minaact.webp);
+}
+
+.activeCell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	font-weight: bolder;
+	background-color: darkgray;
+	color: blue;
+	user-select: none;
+}
+
+.flagImage {
+	position: relative;
+	background-position: top;
+	background-image: url(flag2.png);
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: 0.5px solid black;
+	cursor: pointer;
+	color: gray;
+	background-color: grey;
+	transition: all ease;
+}
+
+.cell:hover {
+	background-color: rgb(38, 109, 240);
+	transition: all ease;
+}
+
+.activeCell:hover {
+	background-color: darkgray;
+}
+
+header {
+	display: inline-block;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+	transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	transform: rotate(45deg) translate(-8px, -7px);
+}
+
+.menu {
+	font-size: 2rem;
+	color: black;
+	margin-left: 0.5%;
+	margin-right: 10px;
+}
+
+.settings {
+	color: black;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	height: 100%;
+	width: 300px;
+	margin-right: -1000%;
+	transition: all 0.5s ease;
+	font-size: 2rem;
+}
+
+.stats {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 2rem;
+	color: rgb(0, 0, 0);
+}
