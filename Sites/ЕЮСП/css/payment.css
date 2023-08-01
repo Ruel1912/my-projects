@@ -1,0 +1,244 @@
+.payment-banner {
+  padding: 4.7rem 0 6.3rem !important;
+  background: url('/images/banner/payment-banner.jpg') no-repeat right
+    center/cover;
+}
+
+.payment-banner__sub-title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.payment-banner .form {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.payment-banner .button {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.payment-banner input {
+  border-color: #1b202680;
+  color: var(--text);
+}
+
+.payment-banner input::placeholder {
+  color: #1b202680;
+}
+
+/* Faq */
+.faq h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 3.4rem;
+}
+
+.faq__item {
+  display: flex;
+  gap: 1rem;
+}
+
+.faq__item:last-child {
+  align-items: center;
+}
+
+.faq__item span {
+  font-weight: 700;
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #0f73e7 0%, #044da3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.faq__item_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.faq__item_content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.faq__item_content li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.faq__item_content ul svg {
+  flex-shrink: 0;
+}
+
+.faq__togglers {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.faq__toggler {
+  padding: 1.6rem 2rem;
+  background: #f4f9ff;
+  cursor: pointer;
+}
+
+.faq__toggler_svg {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.faq__toggler.active .faq__toggler_body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.faq__toggler:hover .faq__toggler_svg path:first-child,
+.faq__toggler:active .faq__toggler_svg path:first-child,
+.faq__toggler.active .faq__toggler_svg path:first-child {
+  fill: var(--primary);
+}
+
+.faq__toggler:hover .faq__toggler_svg path:last-child,
+.faq__toggler:active .faq__toggler_svg path:last-child,
+.faq__toggler.active .faq__toggler_svg path:last-child {
+  stroke: #fff;
+}
+
+.faq__toggler.active .faq__toggler_svg {
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+}
+
+.faq__toggler_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__toggler_body {
+  display: none;
+  margin-top: 1.8rem;
+}
+
+.faq__toggler_body_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 2.2rem;
+  border-left: 1px solid var(--primary);
+}
+
+.faq__toggler_body_list li {
+  position: relative;
+}
+
+.faq__toggler_body_list span {
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1.5px dashed var(--primary);
+  position: absolute;
+  top: 0;
+  left: calc((2.2rem + (1.9rem / 2)) * -1);
+  z-index: 1;
+  background: #f4f9ff;
+}
+
+.faq__toggler_body_list li:last-child span {
+  top: unset;
+  bottom: 0;
+}
+
+.faq__toggler_body_list ul {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq__toggler_body_list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.faq__toggler_body_list svg {
+  flex-shrink: 0;
+}
+
+.faq__toggler_body_list p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.payment-modal .radios {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payment-modal .radios .checkbox-icon {
+  border-color: var(--primary);
+}
+.payment-modal .radios .custom-checkbox input:checked + .checkbox-icon::before {
+  background-color: var(--primary);
+}
+
+.qr-modal img {
+  width: 200px;
+  height: 200px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  .payment-banner {
+    background-position: left;
+  }
+
+  .payment-banner .form {
+    max-width: unset;
+  }
+
+  .faq__toggler {
+    padding: 1rem 0.5rem;
+  }
+}
