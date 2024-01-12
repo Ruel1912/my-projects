@@ -30,10 +30,8 @@ const countAdjacentZeros = (row, col) => {
 
   // Массив с относительными координатами соседей (сверху, снизу, слева, справа)
   const neighbors = [
-    { row: row - 1, col },
-    { row: row + 1, col },
-    { row, col: col - 1 },
-    { row, col: col + 1 },
+    { row: row - 1, col }, { row: row + 1, col },
+    { row, col: col - 1 }, { row, col: col + 1 },
   ]
 
   neighbors.forEach(neighbor => {
@@ -44,7 +42,7 @@ const countAdjacentZeros = (row, col) => {
       newRow >= 0 && newRow < SIZE &&
       newCol >= 0 && newCol < SIZE &&
       document.getElementById('myTable').rows[newRow].cells[newCol].textContent === '1'
-    ) count++ 
+    ) count++
   })
 
   return count
@@ -57,8 +55,7 @@ const checkAdjacentZeros = () => {
 
   Array.from(document.querySelectorAll('td'))
     .filter(cell => cell.textContent === "0")
-    .forEach((cell, index) => {
-      // cell.style.backgroundColor = "red"
+    .forEach(cell => {
       let row = parseInt(cell.dataset.x);
       let col = parseInt(cell.dataset.y);
       let adjacentZeros = countAdjacentZeros(row, col)
@@ -73,9 +70,9 @@ const checkAdjacentZeros = () => {
 
 const SIZE = 5; // Размер таблицы
 // Кнопки таблицы
-const cellButtons  = document.querySelectorAll(".buttons button")
-const buttonPaint  = document.querySelector(".button-paint")
-const buttonPrint  = document.querySelector(".button-print")
+const cellButtons = document.querySelectorAll(".buttons button")
+const buttonPaint = document.querySelector(".button-paint")
+const buttonPrint = document.querySelector(".button-print")
 const buttonReload = document.querySelector(".button-reload")
 // Добавления слушателя по клику для кнопок
 cellButtons.forEach(cellButton => cellButton.addEventListener('click', paintCells))
