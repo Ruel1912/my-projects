@@ -48,7 +48,6 @@ const countAdjacentZeros = (row, col) => {
   return count
 }
 
-
 // Вывод количества ячеек с нулями, имеющими более двух соседей
 const checkAdjacentZeros = () => {
   let zerosCount = 0
