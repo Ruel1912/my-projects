@@ -1,3 +1,5 @@
+![image](https://github.com/Ruel1912/my-projects/assets/74548409/2ecdf4e6-8b63-4782-b954-9f22d56f59f5)
+
 Навыки:
 - владение HTML, CSS и JS
 - знание основ БЭМ-методологии
