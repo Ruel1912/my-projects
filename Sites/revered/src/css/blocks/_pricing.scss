@@ -1,0 +1,69 @@
+.pricing {
+  padding: 2.3rem 0;
+  position: relative;
+  background: url("../../images/pricing-decor.svg") no-repeat center;
+  background-position: 50% -9%;
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+  }
+  &__cards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width: 1024px) {
+
+    background-position: 50% -4%;
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    &__card {
+      max-width: unset;
+
+      &_dark {
+        max-width: unset;
+        position: static;
+        transform: none;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    background-position: 50% -1%;
+    background-size: 135%;
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    &__cards {
+      max-width: 450px;
+      margin-inline: auto;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__card {
+      &__top {
+        padding: 1.5rem 1.2rem 1.2rem;
+      }
+      &__bottom {
+        padding: 1.1rem 1.2rem 1.2rem;
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    background: none;
+    &__title {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+@keyframes cardShow {
+  to {
+    opacity: 1;
+  }
+}
