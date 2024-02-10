@@ -15,12 +15,22 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return '!!!';
+    return view('welcome');
 });
 
-
-Route::get('/user', [UserController::class, 'show']);
-Route::get('/user/all', [UserController::class, 'all']);
+Route::prefix('user')->group(function() {
+    Route::get('/', [UserController::class, 'index']);
+    Route::get('/about', [UserController::class, 'about']);
+    Route::get('/contact', [UserController::class, 'contact']);
+    Route::get('/all', [UserController::class, 'all']);
+});
+// Route::get('/user/', [UserController::class, 'index']);
+// Route::get('/user/about', [UserController::class, 'about']);
+// Route::get('/user/contact', [UserController::class, 'contact']);
+// Route::get('/user/{surname}/{name}', [UserController::class, 'show']);
+// Route::get('/user/{username}', [UserController::class, 'city']);
+Route::get('/users/all', [UserController::class, 'all']);
+Route::get('/users/show', [UserController::class, 'show']);
 // Route::get('/posts/{date}', function ($date) {
 //     return "date: $date";
 // })->where('date', '^\d{4}-\d{2}-\d{2}$');
