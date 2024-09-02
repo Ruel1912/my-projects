@@ -4,6 +4,12 @@ class User {
     public $name;
     public $age;
 
+    public function __construct($name, $age)
+    {
+        $this->name = $name;
+        $this->age = $age;
+    }
+
     public function show($text) {
         return $text.'!!!';
     }
@@ -32,11 +38,3 @@ class User {
         return $age > 18 and $age <= 60;
     }
 }
-
-
-$user = new User();
-$user->name = 'john';
-$user->age = 25;
-$user->setAge(30);
-//print_r($user);
-//echo $user->show('hello');

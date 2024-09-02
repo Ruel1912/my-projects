@@ -54,14 +54,3 @@ class Employee {
     }
 }
 
-$jhon = new Employee('Jhon', 'Ivanov', 25, 1000);
-$eric = new Employee('Eric', 'Perov', 26, 2000);
-$kyle = new Employee('Kyle', 'Sidorov', 30, 3000);
-
-$eric->doubleSalary();
-echo "<pre>";
-//echo $kyle->getSalary() + $eric->getSalary();
-print_r($kyle);
-echo $kyle->getSalary();
-echo "</pre>";
-
