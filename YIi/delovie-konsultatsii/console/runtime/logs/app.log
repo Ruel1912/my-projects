@@ -1,0 +1,643 @@
+2023-04-20 13:37:12 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct()
+#1 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#6 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#7 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#9 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(923): yii\db\Schema->getTableSchema()
+#12 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(1021): yii\db\Connection->getTableSchema()
+#13 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(980): yii\gii\generators\model\Generator->getTableNames()
+#14 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\validators\InlineValidator.php(77): yii\gii\generators\model\Generator->validateTableName()
+#15 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute()
+#16 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes()
+#17 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(35): yii\base\Model->validate()
+#18 [internal function]: yii\gii\console\GenerateAction->run()
+#19 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array()
+#20 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams()
+#21 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#22 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#23 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#24 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#25 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#26 D:\Software\OSPanel\domains\stopdolgoff\yii(23): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#4 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#5 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#7 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Connection.php(923): yii\db\Schema->getTableSchema()
+#10 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(1021): yii\db\Connection->getTableSchema()
+#11 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(980): yii\gii\generators\model\Generator->getTableNames()
+#12 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\validators\InlineValidator.php(77): yii\gii\generators\model\Generator->validateTableName()
+#13 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute()
+#14 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes()
+#15 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(35): yii\base\Model->validate()
+#16 [internal function]: yii\gii\console\GenerateAction->run()
+#17 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array()
+#18 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams()
+#19 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#20 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#21 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#22 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#23 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#24 D:\Software\OSPanel\domains\stopdolgoff\yii(23): yii\base\Application->run()
+#25 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2advanced'
+)
+
+2023-04-20 13:37:12 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'e59f0ac8-d81d-4b8a-953f-0c457791f6b1'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'ProgramW6432' => 'C:\\Program Files'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\datagrip.vmoptions'
+    'CLION_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\clion.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrains_client.vmoptions'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'USERNAME' => 'Mikhail'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\Mikhail'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rubymine.vmoptions'
+    'PROCESSOR_REVISION' => '8c01'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Software\\PhpStorm 2022.2\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\pycharm.vmoptions'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Software\\nodejs;C:\\ProgramData\\chocolatey\\bin;D:\\Software\\php-8.2.3-Win32-vs16-x64;C:\\Program Files\\Docker\\Docker\\resources\\bin;D:\\Software\\WinSCP\\;D:\\Software\\Inkscape\\bin;D:\\Software\\Git\\cmd;D:\\Software\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Mikhail\\.console-ninja\\.bin;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Mikhail\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Software\\Microsoft VS Code\\bin;C:\\Users\\Mikhail\\AppData\\Roaming\\npm;C:\\Users\\Mikhail\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Software\\PhpStorm 2022.2\\bin;C:\\Program Files\\WinRAR;D:\\Software\\OSPanel\\modules\\php\\PHP_8.1;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrainsclient.vmoptions'
+    'IDEA_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\idea.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\WIN-KDRV3J0O035'
+    'PT7HOME' => 'D:\\Software\\Cisco Packet Tracer 7.3.0'
+    'APPCODE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\appcode.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\Mikhail'
+    'SystemRoot' => 'C:\\Windows'
+    'STUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\studio.vmoptions'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\Mikhail\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\Mikhail\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 140 Stepping 1, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\Mikhail\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'WEBIDE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webide.vmoptions'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\phpstorm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rider.vmoptions'
+    'OS' => 'Windows_NT'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Software\\PhpStorm 2022.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\devecostudio.vmoptions'
+    'USERDOMAIN_ROAMINGPROFILE' => 'WIN-KDRV3J0O035'
+    'windir' => 'C:\\Windows'
+    'ProgramFiles' => 'C:\\Program Files'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'DATASPELL_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\dataspell.vmoptions'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Software\\Oracle\\Virtual_Box\\'
+    'TEMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'GATEWAY_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\gateway.vmoptions'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'USERDOMAIN' => 'WIN-KDRV3J0O035'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'WIN-KDRV3J0O035'
+    'ProgramData' => 'C:\\ProgramData'
+    'GOLAND_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\goland.vmoptions'
+    'ChocolateyLastPathUpdate' => '133214016772675441'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Mikhail\\AppData\\Local\\JetBrains\\PhpStorm2022.2\\terminal\\history\\stopdolgoff-history2'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1681987032.0196
+    'REQUEST_TIME' => 1681987032
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/model'
+        2 => '--tableName=articles'
+        3 => '--modelClass=Article'
+    ]
+    'argc' => 4
+]
+2023-04-20 14:37:49 [-][-][-][error][yii\base\ErrorException:8192] yii\base\ErrorException: strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\Generator.php:499
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\Generator.php(499): strtolower()
+#2 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(962): yii\gii\Generator->isReservedKeyword()
+#3 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\validators\InlineValidator.php(77): yii\gii\generators\model\Generator->validateModelClass()
+#4 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute()
+#5 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes()
+#6 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(35): yii\base\Model->validate()
+#7 [internal function]: yii\gii\console\GenerateAction->run()
+#8 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array()
+#9 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams()
+#10 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#11 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#12 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#13 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#14 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#15 D:\Software\OSPanel\domains\stopdolgoff\yii(23): yii\base\Application->run()
+#16 {main}
+2023-04-20 14:37:49 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'e59f0ac8-d81d-4b8a-953f-0c457791f6b1'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'ProgramW6432' => 'C:\\Program Files'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\datagrip.vmoptions'
+    'CLION_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\clion.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrains_client.vmoptions'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'USERNAME' => 'Mikhail'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\Mikhail'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rubymine.vmoptions'
+    'PROCESSOR_REVISION' => '8c01'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Software\\PhpStorm 2022.2\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\pycharm.vmoptions'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Software\\nodejs;C:\\ProgramData\\chocolatey\\bin;D:\\Software\\php-8.2.3-Win32-vs16-x64;C:\\Program Files\\Docker\\Docker\\resources\\bin;D:\\Software\\WinSCP\\;D:\\Software\\Inkscape\\bin;D:\\Software\\Git\\cmd;D:\\Software\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Mikhail\\.console-ninja\\.bin;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Mikhail\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Software\\Microsoft VS Code\\bin;C:\\Users\\Mikhail\\AppData\\Roaming\\npm;C:\\Users\\Mikhail\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Software\\PhpStorm 2022.2\\bin;C:\\Program Files\\WinRAR;D:\\Software\\OSPanel\\modules\\php\\PHP_8.1;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrainsclient.vmoptions'
+    'IDEA_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\idea.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\WIN-KDRV3J0O035'
+    'PT7HOME' => 'D:\\Software\\Cisco Packet Tracer 7.3.0'
+    'APPCODE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\appcode.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\Mikhail'
+    'SystemRoot' => 'C:\\Windows'
+    'STUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\studio.vmoptions'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\Mikhail\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\Mikhail\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 140 Stepping 1, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\Mikhail\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'WEBIDE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webide.vmoptions'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\phpstorm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rider.vmoptions'
+    'OS' => 'Windows_NT'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Software\\PhpStorm 2022.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\devecostudio.vmoptions'
+    'USERDOMAIN_ROAMINGPROFILE' => 'WIN-KDRV3J0O035'
+    'windir' => 'C:\\Windows'
+    'ProgramFiles' => 'C:\\Program Files'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'DATASPELL_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\dataspell.vmoptions'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Software\\Oracle\\Virtual_Box\\'
+    'TEMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'GATEWAY_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\gateway.vmoptions'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'USERDOMAIN' => 'WIN-KDRV3J0O035'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'WIN-KDRV3J0O035'
+    'ProgramData' => 'C:\\ProgramData'
+    'GOLAND_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\goland.vmoptions'
+    'ChocolateyLastPathUpdate' => '133214016772675441'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Mikhail\\AppData\\Local\\JetBrains\\PhpStorm2022.2\\terminal\\history\\stopdolgoff-history2'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1681990669.3266
+    'REQUEST_TIME' => 1681990669
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/model'
+        2 => '--tableName=articles'
+    ]
+    'argc' => 3
+]
+2023-04-29 12:00:08 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists in D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute()
+#2 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Migration.php(322): yii\db\Command->execute()
+#3 D:\Software\OSPanel\domains\stopdolgoff\console\migrations\m130524_201442_init.php(15): yii\db\Migration->createTable()
+#4 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(758): m130524_201442_init->up()
+#5 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#10 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#11 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#12 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#13 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#14 D:\Software\OSPanel\domains\stopdolgoff\yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(255) NOT NULL UNIQUE,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255) UNIQUE,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`status` smallint(6) NOT NULL DEFAULT 10,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB in D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute()
+#2 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\db\Migration.php(322): yii\db\Command->execute()
+#3 D:\Software\OSPanel\domains\stopdolgoff\console\migrations\m130524_201442_init.php(15): yii\db\Migration->createTable()
+#4 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(758): m130524_201442_init->up()
+#5 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#10 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#11 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#12 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#13 D:\Software\OSPanel\domains\stopdolgoff\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#14 D:\Software\OSPanel\domains\stopdolgoff\yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2023-04-29 12:00:03 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Mikhail\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '133214016772675441'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\LOCAL\\crashpad_1340_WNUZNSXAFMSCWQHV'
+    'CLION_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'WIN-KDRV3J0O035'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\devecostudio.vmoptions'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'GATEWAY_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Mikhail'
+    'IDEA_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Mikhail\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WIN-KDRV3J0O035'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Software\\nodejs;C:\\ProgramData\\chocolatey\\bin;D:\\Software\\php-8.2.3-Win32-vs16-x64;C:\\Program Files\\Docker\\Docker\\resources\\bin;D:\\Software\\WinSCP\\;D:\\Software\\Inkscape\\bin;D:\\Software\\Git\\cmd;D:\\Software\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Mikhail\\.console-ninja\\.bin;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Mikhail\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Software\\Microsoft VS Code\\bin;C:\\Users\\Mikhail\\AppData\\Roaming\\npm;C:\\Users\\Mikhail\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Software\\PhpStorm 2022.2\\bin;C:\\Program Files\\WinRAR;D:\\Software\\OSPanel\\modules\\php\\PHP_8.1;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PhpStorm' => 'D:\\Software\\PhpStorm 2022.2\\bin;'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\phpstorm.vmoptions'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 140 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8c01'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Mikhail\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'D:\\Software\\Cisco Packet Tracer 7.3.0'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\pycharm.vmoptions'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RIDER_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'WIN-KDRV3J0O035'
+    'USERDOMAIN_ROAMINGPROFILE' => 'WIN-KDRV3J0O035'
+    'USERNAME' => 'Mikhail'
+    'USERPROFILE' => 'C:\\Users\\Mikhail'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Software\\Oracle\\Virtual_Box\\'
+    'WEBIDE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webide.vmoptions'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.77.3'
+    'LANG' => 'ru_RU.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'D:\\Software\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-e2e8d55373-sock'
+    'VSCODE_INJECTION' => '1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1682758803.7925
+    'REQUEST_TIME' => 1682758803
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2023-10-31 18:45:09 [-][-][-][error][yii\console\Exception] yii\console\Exception: Неизвестная опция: --tableame. Options available: --color, --interactive, --help, --silentExitOnException, --overwrite, --db, --ns, --tableName, --modelClass, --baseClass, --generateRelations, --generateJunctionRelationMode, --useClassConstant, --generateRelationsFromCurrentSchema, --generateLabelsFromComments, --useTablePrefix, --standardizeCapitals, --singularize, --useSchemaName, --generateQuery, --queryNs, --queryClass, --queryBaseClass, --template, --enableI18N, --messageCategory in D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\console\Controller.php:171
+Stack trace:
+#0 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#1 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#2 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#3 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#4 D:\Software\OSPanel\domains\delovie-konsultatsii\yii(23): yii\base\Application->run()
+#5 {main}
+2023-10-31 18:45:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Mikhail\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '133214016772675441'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_2508_WZMVYRQHQYHIABTW'
+    'CLION_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'WIN-KDRV3J0O035'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\devecostudio.vmoptions'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Mikhail'
+    'IDEA_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Mikhail\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WIN-KDRV3J0O035'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Software\\nodejs;C:\\ProgramData\\chocolatey\\bin;D:\\Software\\php-8.2.3-Win32-vs16-x64;D:\\Software\\WinSCP\\;D:\\Software\\Inkscape\\bin;D:\\Software\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\PuTTY\\;D:\\Software\\Git\\cmd;C:\\Users\\Mikhail\\.console-ninja\\.bin;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Mikhail\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Software\\Microsoft VS Code\\bin;C:\\Users\\Mikhail\\AppData\\Roaming\\npm;C:\\Users\\Mikhail\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Software\\PhpStorm 2022.2\\bin;C:\\Program Files\\WinRAR;D:\\Software\\OSPanel\\modules\\php\\PHP_8.1;D:\\Software\\PyCharm Community Edition 2022.1.4\\bin;;D:\\Downloads\\flutter\\bin;C:\\msys64\\ucrt64\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PhpStorm' => 'D:\\Software\\PhpStorm 2022.2\\bin;'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\phpstorm.vmoptions'
+    'PHP_COMMAND' => 'php.exe'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 140 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8c01'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Mikhail\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'D:\\Software\\Cisco Packet Tracer 7.3.0'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\pycharm.vmoptions'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RIDER_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'WIN-KDRV3J0O035'
+    'USERDOMAIN_ROAMINGPROFILE' => 'WIN-KDRV3J0O035'
+    'USERNAME' => 'Mikhail'
+    'USERPROFILE' => 'C:\\Users\\Mikhail'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Software\\Oracle\\Virtual_Box\\'
+    'WEBIDE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webide.vmoptions'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.83.1'
+    'LANG' => 'ru_RU.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'D:\\Software\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-6f89b4233e-sock'
+    'VSCODE_INJECTION' => '1'
+    'PHP_SELF' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'SCRIPT_NAME' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'SCRIPT_FILENAME' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'PATH_TRANSLATED' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1698767109.9194
+    'REQUEST_TIME' => 1698767109
+    'argv' => [
+        0 => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+        1 => 'gii/model'
+        2 => '--tableame=reviews'
+        3 => '--modellass=ouramespace\\models\\eviews'
+    ]
+    'argc' => 4
+]
+2023-10-31 18:46:21 [-][-][-][error][yii\console\Exception] yii\console\Exception: Неизвестная опция: --tablename. Options available: --color, --interactive, --help, --silentExitOnException, --overwrite, --db, --ns, --tableName, --modelClass, --baseClass, --generateRelations, --generateJunctionRelationMode, --useClassConstant, --generateRelationsFromCurrentSchema, --generateLabelsFromComments, --useTablePrefix, --standardizeCapitals, --singularize, --useSchemaName, --generateQuery, --queryNs, --queryClass, --queryBaseClass, --template, --enableI18N, --messageCategory in D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\console\Controller.php:171
+Stack trace:
+#0 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#1 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#2 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#3 D:\Software\OSPanel\domains\delovie-konsultatsii\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#4 D:\Software\OSPanel\domains\delovie-konsultatsii\yii(23): yii\base\Application->run()
+#5 {main}
+2023-10-31 18:46:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Mikhail\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '133214016772675441'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_2508_WZMVYRQHQYHIABTW'
+    'CLION_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'WIN-KDRV3J0O035'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\devecostudio.vmoptions'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Mikhail'
+    'IDEA_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Mikhail\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WIN-KDRV3J0O035'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Software\\nodejs;C:\\ProgramData\\chocolatey\\bin;D:\\Software\\php-8.2.3-Win32-vs16-x64;D:\\Software\\WinSCP\\;D:\\Software\\Inkscape\\bin;D:\\Software\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\PuTTY\\;D:\\Software\\Git\\cmd;C:\\Users\\Mikhail\\.console-ninja\\.bin;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Mikhail\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Software\\Microsoft VS Code\\bin;C:\\Users\\Mikhail\\AppData\\Roaming\\npm;C:\\Users\\Mikhail\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Software\\PhpStorm 2022.2\\bin;C:\\Program Files\\WinRAR;D:\\Software\\OSPanel\\modules\\php\\PHP_8.1;D:\\Software\\PyCharm Community Edition 2022.1.4\\bin;;D:\\Downloads\\flutter\\bin;C:\\msys64\\ucrt64\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PhpStorm' => 'D:\\Software\\PhpStorm 2022.2\\bin;'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\phpstorm.vmoptions'
+    'PHP_COMMAND' => 'php.exe'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 140 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8c01'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Mikhail\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'D:\\Software\\Cisco Packet Tracer 7.3.0'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\pycharm.vmoptions'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RIDER_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'WIN-KDRV3J0O035'
+    'USERDOMAIN_ROAMINGPROFILE' => 'WIN-KDRV3J0O035'
+    'USERNAME' => 'Mikhail'
+    'USERPROFILE' => 'C:\\Users\\Mikhail'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Software\\Oracle\\Virtual_Box\\'
+    'WEBIDE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webide.vmoptions'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.83.1'
+    'LANG' => 'ru_RU.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'D:\\Software\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-6f89b4233e-sock'
+    'VSCODE_INJECTION' => '1'
+    'PHP_SELF' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'SCRIPT_NAME' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'SCRIPT_FILENAME' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'PATH_TRANSLATED' => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1698767181.1063
+    'REQUEST_TIME' => 1698767181
+    'argv' => [
+        0 => 'D:\\Software\\OSPanel\\domains\\delovie-konsultatsii\\yii'
+        1 => 'gii/model'
+        2 => '--tablename=reviews'
+        3 => '--modelclass=app\\models\\reviews'
+    ]
+    'argc' => 4
+]

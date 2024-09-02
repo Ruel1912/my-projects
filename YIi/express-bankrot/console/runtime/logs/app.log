@@ -1,0 +1,155 @@
+2023-06-26 12:27:09 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists in D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute()
+#2 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Migration.php(322): yii\db\Command->execute()
+#3 D:\Software\OSPanel\domains\express-bankrot\console\migrations\m130524_201442_init.php(15): yii\db\Migration->createTable()
+#4 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(758): m130524_201442_init->up()
+#5 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#10 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#11 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#12 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#13 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#14 D:\Software\OSPanel\domains\express-bankrot\yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(255) NOT NULL UNIQUE,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255) UNIQUE,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`status` smallint(6) NOT NULL DEFAULT 10,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB in D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute()
+#2 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\db\Migration.php(322): yii\db\Command->execute()
+#3 D:\Software\OSPanel\domains\express-bankrot\console\migrations\m130524_201442_init.php(15): yii\db\Migration->createTable()
+#4 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(758): m130524_201442_init->up()
+#5 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#10 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#11 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#12 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#13 D:\Software\OSPanel\domains\express-bankrot\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#14 D:\Software\OSPanel\domains\express-bankrot\yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2023-06-26 12:27:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Mikhail\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '133214016772675441'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\LOCAL\\crashpad_1592_LWXGROMFQGOMNDWL'
+    'CLION_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'WIN-KDRV3J0O035'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\devecostudio.vmoptions'
+    'DOTNET_CLI_TELEMETRY_OPTOUT' => '1'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Mikhail'
+    'IDEA_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Mikhail\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WIN-KDRV3J0O035'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Software\\nodejs;C:\\ProgramData\\chocolatey\\bin;D:\\Software\\php-8.2.3-Win32-vs16-x64;D:\\Software\\WinSCP\\;D:\\Software\\Inkscape\\bin;D:\\Software\\Git\\cmd;D:\\Software\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\Mikhail\\.console-ninja\\.bin;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\Mikhail\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\Mikhail\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Software\\Microsoft VS Code\\bin;C:\\Users\\Mikhail\\AppData\\Roaming\\npm;C:\\Users\\Mikhail\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Software\\PhpStorm 2022.2\\bin;C:\\Program Files\\WinRAR;D:\\Software\\OSPanel\\modules\\php\\PHP_8.1;;D:\\Software\\PyCharm Community Edition 2022.1.4\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PhpStorm' => 'D:\\Software\\PhpStorm 2022.2\\bin;'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\phpstorm.vmoptions'
+    'POWERSHELL_TELEMETRY_OPTOUT' => '1'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 140 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8c01'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Mikhail\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'D:\\Software\\Cisco Packet Tracer 7.3.0'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\pycharm.vmoptions'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RIDER_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Mikhail\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'WIN-KDRV3J0O035'
+    'USERDOMAIN_ROAMINGPROFILE' => 'WIN-KDRV3J0O035'
+    'USERNAME' => 'Mikhail'
+    'USERPROFILE' => 'C:\\Users\\Mikhail'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Software\\Oracle\\Virtual_Box\\'
+    'WEBIDE_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webide.vmoptions'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\ja-netfilter-all\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.79.2'
+    'LANG' => 'ru_RU.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'D:\\Software\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'd:\\Software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-964f3b1d87-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => 'a0d38072-4bd4-4003-b4a7-26ad48ac2bd6'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1687771620.9452
+    'REQUEST_TIME' => 1687771620
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

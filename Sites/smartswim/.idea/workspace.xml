@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f8a7674-8733-4cc3-9b4e-5ccad004f105" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/ajax/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PjESHmVQS3LxlXOCUArOpNHrnP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Projects/WEB/Myforce/docker/www/myforce/user",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f8a7674-8733-4cc3-9b4e-5ccad004f105" name="Changes" comment="" />
+      <created>1683962088761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683962088761</updated>
+      <workItem from="1683962090152" duration="4798000" />
+      <workItem from="1683978149601" duration="3777000" />
+      <workItem from="1684003326818" duration="4533000" />
+      <workItem from="1684177357865" duration="1279000" />
+      <workItem from="1684262592705" duration="605000" />
+      <workItem from="1684265275820" duration="2000" />
+      <workItem from="1684274441524" duration="297000" />
+      <workItem from="1684357479950" duration="596000" />
+      <workItem from="1684604283544" duration="5000" />
+      <workItem from="1684604798621" duration="596000" />
+      <workItem from="1684790233613" duration="10000" />
+      <workItem from="1684839388016" duration="595000" />
+      <workItem from="1685551214165" duration="1188000" />
+      <workItem from="1685618211951" duration="618000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
