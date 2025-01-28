@@ -1,5 +1,3 @@
-<img src='https://github.com/Ruel1912/my-projects/assets/74548409/2ecdf4e6-8b63-4782-b954-9f22d56f59f5' style="height: 400px;"/>
-
 # 💫 Обо мне:
 Frontend Developer | 19 y.o. | Moscow
 
