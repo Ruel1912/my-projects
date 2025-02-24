@@ -13,6 +13,7 @@ Frontend Developer | 20 лет | Москва
 * [Интерактивная база знаний](https://cyclegram.idte.ru)
 * [Продажа курса с личным кабинетом](https://topbfl.ru)
 * [Интернет-магазин](https://pardelivery.ru)
+* [Интернет-магазин (React + NodeJS)](https://github.com/Ruel1912/netology-shop)
 * [Сборник рецептов](https://ruel1912.github.io/corus)
 * [Шахматы](https://ruel1912.github.io/chess)
 
@@ -23,6 +24,8 @@ Frontend Developer | 20 лет | Москва
 * [Слайд-шоу](https://ruel1912.github.io/my-projects/Apps/slider)
 * [Перенос элементов](https://ruel1912.github.io/my-projects/Apps/dragNdrop)
 * [Галерея](https://ruel1912.github.io/my-projects/Apps/gallery)
+* [Планировщик заданий](https://ruel1912.github.io/todo-app)
+* [Курсы валют](https://ruel1912.github.io/currency-rates/)
 
 # Вёрстка
 * [Игровой сайт](https://ruel1912.github.io/my-projects/Sites/csgo)
