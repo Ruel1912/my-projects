@@ -10,7 +10,7 @@ Frontend Developer | 20 y.o. | Moscow
 
 # ⚡︎ Проекты
 * [Автоматизированная Информационная Система (доступно для работы только для Министерства Образования Московской Области)](https://idschool.idte.ru)
-* [Интерактивная база знаний](https://cyclegramm.idte.ru)
+* [Интерактивная база знаний](https://cyclegram.idte.ru)
 * [Продажа курса с личным кабинетом](https://topbfl.ru)
 * [Интернет-магазин](https://pardelivery.ru)
 * [Сборник рецептов](https://ruel1912.github.io/corus)
@@ -26,8 +26,8 @@ Frontend Developer | 20 y.o. | Moscow
 
 # Вёрстка
 * [Игровой сайт](https://ruel1912.github.io/my-projects/Sites/csgo)
-* [Сайт визитка](https://ruel1912.github.io/my-projects/Sites/gamingSite)
 * [Продающий сайт](https://ruel1912.github.io/my-projects/Sites/telphy)
+* [Сайт визитка](https://ruel1912.github.io/my-projects/Sites/gamingSite)
 
 # CSS
 * [Интерсный способ отобразить картинку](https://ruel1912.github.io/my-projects/CSS/animation)
