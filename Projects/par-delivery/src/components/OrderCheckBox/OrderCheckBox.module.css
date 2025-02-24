@@ -1,0 +1,42 @@
+.Contan {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items:center;
+  margin-left: 38px;
+}
+.Contan i {
+  font-size: 15px;
+}
+.Contan > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  border: 1px solid #245bff;
+  background: none;
+  background:#245bff;
+}
+.Contan > button:first-child > i {
+  color: #fff;
+  font-size: 10px;
+}
+.Contan > button:last-child {
+  border: unset;
+  background: none;
+}
+
+.Contan > button:last-child > i {
+  color: #245bffcc;
+  margin-left: 2px;
+  transform: rotate(180deg);
+}
+
+.Contan > p {
+  color: #8f92a1;
+  font-size: 12px;
+  font-weight: 400;
+}

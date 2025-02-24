@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #f1f3fb;
+    min-height: 100svh;
+  }
+
+@media (min-width: 1025px){
+  .main{
+    background-color: unset;
+  }
+}

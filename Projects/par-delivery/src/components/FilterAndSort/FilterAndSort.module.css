@@ -1,0 +1,104 @@
+.FilterContain {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Filter {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #fff;
+}
+.Filter > * {
+  color: #8f92a1;
+  font-size: 15px;
+}
+.Filter > i {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.buttonList {
+  border: unset;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 28px);
+  border-bottom: 1px solid #97979733;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+.buttonList > i {
+  font-size: 20px;
+  margin: 2px;
+  color: #6B35F5;
+}
+.textList {
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 400;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.DropDown {
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.DropDownButton {
+  background: none;
+  width: 100%;
+  text-align: left;
+  border: unset;
+  padding-top: 8px;
+  padding-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 400;
+
+  border-bottom: 1px solid #8f92a133;
+}
+.DropDownPanel {
+  margin-left: 8px;
+}
+
+.FilterPanel {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-right: 28px;
+  margin-left: 28px;
+  margin-top: -21px;
+  z-index: 10;
+}
+
+.FilterPanel h4 {
+  color: #2b2b2b;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.DropDownButtonOpen{
+  color:#6B35F5 !important;
+}
+.DropDownButton > i{
+  font-size: 20px;
+  color:#6B35F5;
+  margin-top: -1px;
+  margin-bottom: -2px;
+}

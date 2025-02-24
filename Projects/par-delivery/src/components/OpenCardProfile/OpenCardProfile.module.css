@@ -1,0 +1,54 @@
+.contan {
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+}
+.openCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+  padding: 18px 20px;
+  gap: 12px;
+}
+.openCard > i {
+  font-size: 20px;
+  margin: 2px;
+  color: #6B35F5;
+}
+.openCard > div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 4px;
+  flex-grow: 1;
+}
+.openCard > div > h4 {
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.openCard > div > p {
+  color: #8f92a1;
+  font-size: 10px;
+  font-weight: 400;
+}
+.openBtn {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 10px;
+  background: var(--blue, #6B35F5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.openBtn > i {
+  font-size: 16px;
+  color: #ffffff;
+}

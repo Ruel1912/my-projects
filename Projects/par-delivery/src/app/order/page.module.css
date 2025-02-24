@@ -1,0 +1,271 @@
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f1f3fb;
+  height: 100svh;
+}
+@media screen {
+  .main {
+    background-color: #fff;
+  }
+}
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 105px;
+  flex-grow: 1;
+  height: auto;
+  background-color: #f1f3fb;
+}
+.content > h2 {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .main {
+    background-color: #fff;
+  }
+  .content {
+    background-color: #fff;
+    padding-top: 80px;
+  }
+  .content > h2 {
+    display: flex;
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+}
+.place {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  /* box-shadow: 0px -18px 18px 0px rgba(32, 51, 79, 0.12); */
+  border-radius: 28px 28px 0px 0px;
+}
+.OrderFree {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 4px;
+  padding: 18px;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+  margin-bottom: 14px;
+}
+.OrderFree > h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.OrderFree p {
+  color: #8f92a1;
+  font-size: 10px;
+  font-weight: 400;
+}
+.OrderFree > .LowLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.OrderFree > .LowLine > div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+.LowLine > div > div {
+  display: flex;
+  gap: 10px;
+}
+.LowLine > div > div > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  border-radius: 11px;
+  background: #e1e6f7;
+}
+.OrderFree > .LowLine img {
+  width: 60px;
+  height: 60px;
+  margin-right: 6px;
+}
+.OrderCard {
+  margin-bottom: 14px;
+
+  border-radius: 28px;
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+  padding: 18px;
+
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+.ImageContan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #e1e6f7;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+}
+.image > img {
+  width: 100%;
+  height: 100%;
+}
+.ImageContan > div > span {
+  color: #8f92a1;
+  font-size: 15px;
+  font-weight: 600;
+}
+.InfoContan {
+  display: flex;
+  justify-content: space-between;
+}
+.InfoContan > div > h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.InfoContan > div > p {
+  color: #8f92a1;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.InfoContan > div:last-child {
+  text-align: end;
+}
+
+.activeP {
+  color: #6B35F5 !important;
+}
+
+.complitedP {
+  color: #21ae0a !important;
+}
+
+.cancelP {
+  color: #2b2b2b !important;
+}
+
+.ButtonModalLine {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.ButtonModal {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 8px;
+  width: 64px;
+  height: 80px;
+  border: unset;
+  background: none;
+  outline: unset;
+}
+
+.ButtonModal > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #6B35F5;
+  width: 52px;
+  height: 52px;
+  background: #f1f3fb;
+  border-radius: 22px;
+}
+
+.ButtonModal > span {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.ProductCard {
+  border-bottom: 1px solid #8f92a133;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* margin-left: 18px; */
+  /* margin-right: 18px; */
+  padding-bottom: 10px;
+}
+
+.ProductCard:not(:first-child) {
+  padding-top: 10px;
+}
+
+.ProductCard > .image {
+  min-width: 44px;
+  border-radius: 11px;
+  border: 1px solid #f1f3fb;
+}
+.ProductCard > .Text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 4px;
+}
+.ProductCard > .Text > p {
+  font-size: 10px;
+  font-weight: 400;
+}
+.ProductCard > .Text > span {
+  color: #8f92a1;
+  font-size: 10px;
+  font-weight: 400;
+}
+.ProductCard > .Price {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 6px 10px 6px 8px;
+  gap: 4px;
+  border-radius: 1000px;
+  background: #e1e6f7;
+  color: #6B35F5;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.backButton > i {
+  color: #6B35F5;
+  font-size: 12px !important;
+}
+.address {
+  margin-top: 2px;
+  color: #979797;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.address > span {
+  color: #2b2b2b;
+}

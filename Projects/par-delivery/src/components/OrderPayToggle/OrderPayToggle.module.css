@@ -1,0 +1,59 @@
+.Contain {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0px 0px 4px 0px rgba(32, 51, 79, 0.2) inset;
+}
+.active {
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+}
+.Contain button {
+  border-radius: 20px;
+  white-space: nowrap;
+  padding: 18px 27px;
+  font-size: 12px;
+  font-weight: 500;
+  border: unset;
+}
+.disable {
+  color: #8f92a1;
+  background: unset;
+}
+.addCash {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 10px 10px 18px;
+  gap: 8px;
+  border-radius: 24px;
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+}
+.addCash > span {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  flex-grow: 1;
+}
+.addCash > i {
+  font-size: 20px;
+  color: #6B35F5;
+}
+.addCash > input {
+  width: 148px;
+  height: 40px;
+  padding: 18px 0px;
+  text-align: center;
+  border-radius: 16px;
+  background: #f9fafd;
+  box-shadow: 0px 0px 4px 0px rgba(32, 51, 79, 0.18) inset;
+  border:none;
+  outline: none;
+}

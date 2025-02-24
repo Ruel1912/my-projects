@@ -1,0 +1,40 @@
+.TabNavigate {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  position: sticky;
+  top: 37px;
+  padding: 20px 16px 14px 16px;
+  width: 100%;
+  max-width: 1024px;
+  z-index: 10;
+  border-bottom: 1px solid #97979733;
+}
+@media (min-width: 1025px) {
+  .TabNavigate {
+    top: 0px;
+    width: -webkit-fill-available;
+    margin-right: 42px;
+  }
+}
+.ProductsTab {
+  display: flex;
+  height: 34px;
+  margin: auto 0px auto 0px;
+  gap: 10px;
+  overflow: scroll;
+  border-radius: 10px;
+}
+
+.ProductsTab::-webkit-scrollbar {
+  display: none;
+}
+.MainTab {
+  border: none;
+  border-radius: 14px;
+  padding: 4px 8px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}

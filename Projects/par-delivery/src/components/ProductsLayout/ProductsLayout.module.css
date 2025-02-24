@@ -1,0 +1,24 @@
+.ProductsContan {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: max-content;
+  margin-top: 54px;
+}
+
+@media (min-width: 1025px) {
+  .ProductsContan {
+    margin-top: 16px;
+  }
+}
+
+.ProductsLayout {
+  border-radius: 28px 28px 0px 0px ;
+  box-shadow: 0px -18px 18px 0px rgba(32, 51, 79, 0.12);
+  background-color: #fff;
+  z-index: 10;
+  margin-top: 14px;
+  flex-grow: 1;
+  margin-bottom: 14px;
+}

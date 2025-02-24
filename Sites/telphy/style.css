@@ -176,11 +176,11 @@ textarea {
 }
 
 .form__row.error::after {
-  background: url(/images/icon/error.svg) no-repeat center/contain;
+  background: url(./images/icon/error.svg) no-repeat center/contain;
 }
 
 .form__row.success::after {
-  background: url(/images/icon/success.svg) no-repeat center/contain;
+  background: url(./images/icon/success.svg) no-repeat center/contain;
 }
 
 input::placeholder,
@@ -388,7 +388,7 @@ body {
   max-width: 875px;
   padding: 3.5rem 4.5rem;
   background-color: #031d36;
-  background: url(/images/menu-bg.png) no-repeat center center/cover;
+  background: url(./images/menu-bg.png) no-repeat center center/cover;
   transition: 0.7s ease-in-out;
   -webkit-transition: 0.7s ease-in-out;
   -moz-transition: 0.7s ease-in-out;
@@ -598,7 +598,7 @@ body {
   position: absolute;
   left: -100px;
   display: block;
-  background: url(/images/promo-before.svg) no-repeat left;
+  background: url(./images/promo-before.svg) no-repeat left;
   height: 100%;
   width: 100%;
   height: 800px;
@@ -889,7 +889,7 @@ body {
 /* Banner */
 .banner {
   color: #fff;
-  background: url(/images/banner.png) no-repeat center center/cover;
+  background: url(./images/banner.png) no-repeat center center/cover;
   padding-top: 0 !important;
 }
 
@@ -1171,7 +1171,7 @@ body {
 }
 
 .swiper-button-next {
-  background: url('/images/arrowcircleright.svg') no-repeat center;
+  background: url('./images/arrowcircleright.svg') no-repeat center;
   border-radius: 50%;
   background-color: var(--primary);
   display: grid;
@@ -1241,7 +1241,7 @@ body {
 
 /* banner2 */
 .banner2__inner {
-  background: url(/images/banner.svg) no-repeat center center/cover;
+  background: url(./images/banner.svg) no-repeat center center/cover;
   padding: 6.25rem 0 7rem;
   color: #fff;
   text-align: center;
@@ -1422,7 +1422,7 @@ body {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  background: url(/images/arrow-down.svg) no-repeat;
+  background: url(./images/arrow-down.svg) no-repeat;
 }
 
 .more__item img {
@@ -1541,7 +1541,7 @@ body {
   gap: 1.75rem;
   align-items: center;
   background-color: #031d36;
-  background: url(/images/menu-bg.png) no-repeat center center/cover;
+  background: url(./images/menu-bg.png) no-repeat center center/cover;
   transition: 0.7s ease-in-out;
   -webkit-transition: 0.7s ease-in-out;
   -moz-transition: 0.7s ease-in-out;
@@ -1555,7 +1555,7 @@ body {
 
 .swal-modal {
   background-color: #031d36;
-  background: url(/images/menu-bg.png) no-repeat center center/cover;
+  background: url(./images/menu-bg.png) no-repeat center center/cover;
 }
 
 .modal__title {

@@ -1,0 +1,93 @@
+.Banner {
+  display: flex;
+  position: sticky;
+  top: 56px;
+  /* width: 100%;
+  min-width: 260px;
+  max-height: 283px; */
+  max-height: 284px !important;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.Banner img {
+  max-height: 284px !important;
+  max-width: 663px;
+  margin-left: -35%;
+  object-fit: contain;
+  display: block;
+  border-left: 0.6rem solid white !important;
+  height: auto;
+}
+.Banner div {
+  max-height: 284px !important;
+}
+@media (min-width: 1025px) {
+  .Banner {
+    top: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .Banner img {
+    margin-left: 0% !important;
+    border-left: none !important;
+  }
+}
+.dot.selected {
+  border-radius: 16%/ 100% !important;
+  width: 42px !important;
+  opacity: 0.98 !important;
+}
+
+/*... z-index: 0;
+  padding-left: 24px;
+  padding-right: 24px; ....*/
+
+/* 
+
+.Banner > div {
+  width: 100%;
+}
+.slider-wrapper {
+  max-height: 283px !important;
+}
+.carousel .control-dots .dot {
+  outline: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) !important;
+}
+.carousel .slider-wrapper {
+  max-width: 976px !important;
+  border-radius: 20px;
+} */
+/* .slide {
+  display: flex;
+  width: 120% !important;
+  min-width: fit-content !important;
+  margin-right: 12px !important;
+  margin-left: 12px !important; }*/
+/*ююю display: flex;
+  border: 1px solid salmon !important;
+  min-width: max-content !important;
+  width: 100% !important;
+  height: 100% !important; 
+  max-height: 100% !important;
+  max-width: 553px !important; */
+/* text-align: left; */
+/* min-width: fit-content !important; ююю*/
+
+/* .slide {
+  max-width: 553px !important;
+}
+.slide img {
+  height: 100%;
+  max-width: 553px !important;
+}
+
+.dot.selected {
+  border-radius: 16%/ 100% !important;
+  width: 42px !important;
+  opacity: 0.98 !important;
+} */

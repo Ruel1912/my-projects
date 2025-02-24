@@ -1,0 +1,96 @@
+.bg {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  flex-flow: column;
+}
+
+.panel {
+  border-radius: 28px 28px 0px 0px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 4px rgba(32, 51, 79, 0.08);
+  margin-top: auto;
+  justify-self: flex-end;
+  padding: 10px 14px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header i {
+  font-size: 16px;
+}
+
+.header > h4 {
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 106%;
+  letter-spacing: -0.84px;
+}
+
+.header > button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+  background: none;
+}
+
+.header > button > i {
+  color: #6B35F5;
+}
+
+.inputGrid {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.inputGridChild {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputContan {
+  height: 52px;
+  padding: 0px 27px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0px 0px 4px 0px rgba(32, 51, 79, 0.2) inset;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 4px;
+  color: #8f92a1;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+/* .inputContan label {
+  color: #8f92a1;
+  font-size: 12px;
+  font-weight: 500;
+} */
+.inputContan > input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.inputGrid > button {
+  margin-top: 4px;
+}

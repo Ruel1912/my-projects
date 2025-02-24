@@ -1,0 +1,38 @@
+.verifyRequestLogic {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 28px;
+}
+.verifyRequestLogic > span {
+  display: flex;
+  height: 40px;
+  width: 215px;
+  /* margin-left: 35px; */
+  gap: 14px;
+  font-size: 22px;
+  overflow: hidden;
+  color: #c2d0fb;
+}
+.verifyRequestLogic > span > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #c2d0fb;
+  border-radius: 16px;
+  background: #f1f3fb;
+}
+.verifyRequestLogic > input {
+  height: 40px;
+  width: 220px;
+  margin-left: 40px;
+  font-size: 22px;
+  letter-spacing: 40px;
+  outline: none;
+  overflow: hidden;
+  opacity: 0.1;
+  background: none;
+  border: none;
+  margin-top: -40px;
+}

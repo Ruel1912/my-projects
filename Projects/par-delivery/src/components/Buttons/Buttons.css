@@ -1,0 +1,126 @@
+.BlueButton {
+  color: #fff;
+  background: #6B35F5;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+  box-shadow: 0px 5.71px 11.42px 0px rgba(8, 35, 48, 0.12);
+  cursor: pointer;
+}
+.BlueButton2 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  height: 56px;
+  border-radius: 24px;
+  letter-spacing: -0.48px;
+}
+.BurgerContactButton {
+  box-sizing: border-box;
+  padding: 6px 8px;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  border-radius: 43px;
+  background: #21ae0a;
+  box-shadow: 0px 40.07393px 80.14787px 0px rgba(8, 35, 48, 0.12);
+  border: unset;
+  height: 58px;
+  width: 100%;
+  color: #fff;
+  font-size: 16.8px;
+  align-items: center;
+  font-weight: 600;
+  justify-items: center;
+}
+.BurgerContactButton.longButton {
+  grid-template-columns: 46px 1fr 46px;
+}
+.BurgerContactButton > i {
+  border: solid 10px #ffffff4d;
+  border-radius: 43px;
+  font-size: 26px;
+}
+
+.SocialButton {
+  font-size: 18px;
+  color: white;
+  border: unset;
+  border-radius: 18px;
+  width: 164px;
+  height: 46px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  gap: 8px;
+  padding: 0 18px;
+  align-items: center;
+}
+.SocialButton > i {
+  font-size: 22px;
+}
+
+.CardButtonBig {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border: unset;
+  border-radius: 60px;
+  background: #fff;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.02),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.02);
+  padding: 10px 0px;
+  width: 100%;
+  gap:10px;
+}
+.CardMultiButtonBig {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  border: unset;
+  border-radius: 60px;
+  background: #fff;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.02),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.02);
+  padding: 9px 20px;
+  width: 100%;
+  gap:10px;
+}
+.CardMultiButtonBig *{
+  color:#fff;
+}
+.CardMultiButtonBig span{
+  font-size: 14px;
+  font-weight: 600;
+}
+.CardButtonBig > i {
+  font-size: 12px;
+  color: #2b2b2b;
+}
+.CardButtonBig > span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #2b2b2b;
+}
+
+.GoBackButtom{
+  border-radius: 1000px;
+  background: #e1e6f7;
+  display: flex;
+  height: 28px;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #6B35F5;
+  border: unset;
+  outline: unset;
+}
+.GoBackButtom i{
+  color: #6B35F5;
+  margin-top: 2px;
+  width: 10px;
+}

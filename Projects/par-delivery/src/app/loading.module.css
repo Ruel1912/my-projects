@@ -1,0 +1,34 @@
+@keyframes go-up-down {    
+  from { bottom: 0px; }          
+  to { bottom: -8px; } 
+}
+
+.Loader {
+  background-color: #6B35F5;
+  background-image: url('/images/Loader/fonts.svg');
+  background-position: -30px;
+  height: 100vh;
+   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Loader_logo {
+  display: block;
+  animation: go-up-down .8s infinite alternate;
+  position: relative;
+  height: 120vmin;
+  max-height: 550px;
+  max-width: 400px;
+  pointer-events: none;
+}
+.Loader_label {
+  margin-top: -6%;
+  height: 8vmin;
+  max-width: 280px;
+  pointer-events: none;
+}
+

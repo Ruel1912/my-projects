@@ -1,0 +1,41 @@
+.Page404 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  .Page404 > img {
+    margin-top: 50px;
+    width: 80%;
+  }
+  .Page404HeadText {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  .Page404Paragraph {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #8f92a1;
+    margin: 0;
+  }
+  .Page404Link {
+    display: flex;
+    background: #6B35F5;
+    border-radius: 1000px;
+    height: 58px;
+    width: 80%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 34px;
+  }
+  

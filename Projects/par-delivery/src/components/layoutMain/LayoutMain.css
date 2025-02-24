@@ -1,0 +1,308 @@
+/* 
+.LayoutContan .ModalClick {
+  position: fixed;
+  display: flex;
+  flex-grow: 1;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  min-height: 100svh;
+  z-index: 10000000000000;
+} */
+
+/* .LayoutContan > .LayoutMainContan > header {
+  position: fixed;
+  margin-top: 24px;
+  border-radius: 28px;
+  width: 380px;
+} */
+
+/* .LayoutContan > .LayoutMainContan > .Banner + div nav > button {
+  display: none;
+} */
+/* 
+.LayoutContan > aside {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  height: 100svh;
+  width: 100vw;
+  overflow: hidden;
+}
+.LayoutContan > aside > .burgerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24px;
+  width: calc(100% - 24px);
+  height: 56px;
+}
+.LayoutContan > aside > .burgerHeader > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: unset;
+  border: none;
+}
+.LayoutContan > aside > .burgerHeader > button > I {
+  color: #fff;
+  font-size: 20px;
+} */
+/* .burgerHeader > i {
+  font-size: 20px;
+  color: #fff;
+}
+.burgerHeader > i:last-child {
+  color: #6B35F5;
+} */
+/* 
+.LayoutContan .ProfileInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  margin-left: 16px;
+}
+
+.LayoutContan .ProfileInfo > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 44px;
+  background: #ff612e;
+}
+
+.LayoutContan .ProfileInfo > div {
+  display: flex;
+  flex-flow: column;
+}
+
+.LayoutContan .ProfileInfo > div > span {
+  color: #f1f3fb;
+  font-size: 14px;
+  font-weight: 600;
+}
+.LayoutContan .ProfileInfo > div > span:last-child {
+  font-weight: 400;
+}
+
+.LayoutContan .Navigation {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 14px;
+  margin-left: 16px;
+  margin-top: 22px;
+}
+*/
+
+/*.LayoutContan .Creators {
+  margin-top: 14px;
+  margin-left: 32px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+}
+
+.LayoutContan .RofelPhrase {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  position: absolute;
+  right: 80px;
+  margin-top: 70px;
+  height: 76svh;
+  width: 35px;
+  border-radius: 24px 0px 0px 24px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 1px 1px 4px 0px rgba(32, 51, 79, 0.18) inset;
+}
+.LayoutContan .RofelPhrase p {
+  transform: rotate(180deg);
+  margin-bottom: auto;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  color: rgba(255, 255, 255, 0.8);
+}
+ .LayoutContan .RofelPhrase span {
+  min-height: max-content;
+  padding: 6px;
+  height: 22%;
+  white-space: nowrap;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2b2b2b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  border-radius: 0px 24px 0px 0px;
+  background: rgba(255, 255, 255, 0.6);
+}  */
+/* .LayoutContan > .LayoutMainContan {
+  display: flex;
+  flex-flow: column;
+  box-shadow: -6px 0px 18px 0px rgba(32, 51, 79, 0.18);
+  height: 94svh;
+  width: 380px;
+  overflow: scroll;
+  border-radius: 28px;
+  position: relative;
+  top: 24px;
+  left: calc(100% - 80px);
+  background-color: #fff;
+  animation: cubic-bezier(1, 0.5, 0.5, 1) go-right 0.1s;
+  opacity: 0.92;
+} */
+/* .LayoutContan {
+  display: flex;
+  background-color: #6B35F5;
+  height: 100svh;
+  overflow: hidden;
+} */
+@keyframes go-top-statham {
+  /* объявляем имя анимации: "go-left-right" */
+  from {
+    bottom: -180px;
+  } /* от: left: 0px */
+  to {
+    bottom: 0px;
+  } /* до: left: 100%-50px */
+}
+
+@keyframes go-top-phrase {
+  /* объявляем имя анимации: "go-left-right" */
+  from {
+    bottom: -180px;
+  } /* от: left: 0px */
+  to {
+    bottom: 124px;
+  } /* до: left: 100%-50px */
+}
+
+@keyframes go-top-arrow {
+  /* объявляем имя анимации: "go-left-right" */
+  from {
+    bottom: -180px;
+  } /* от: left: 0px */
+  to {
+    bottom: 102px;
+  } /* до: left: 100%-50px */
+}
+
+@keyframes go-right {
+  from {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    left: 80%;
+    top: 24px;
+    opacity: 0.92;
+  }
+}
+
+@keyframes go-left {
+  from {
+    left: 80%;
+    opacity: 0.92;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.LayoutContan2 {
+  display: flex;
+  min-height: 100vh;
+}
+.LayoutContan2 > aside {
+  display: none;
+}
+.LayoutContan2 {
+  display: flex;
+  justify-content: center;
+}
+.LayoutContan2 > .LayoutMainContan {
+  display: flex;
+  flex-flow: column;
+  /* box-shadow: -6px 0px 18px 0px rgba(32, 51, 79, 0.18); */
+  overflow: scroll;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1108px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+@media (max-width: 1025px) {
+  .LayoutContan2 > .LayoutMainContan {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.LayoutMainContan::-webkit-scrollbar {
+  display: none;
+}
+
+.LayoutContan2 > .LayoutMainContan > header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* .LayoutContan2 > .LayoutMainContan > .Banner {
+  position: fixed;
+  padding-top: 0;
+}
+.LayoutContan2 > .LayoutMainContan > .Banner > .carousel-root {
+  margin-top: 0px;
+} */
+
+.LayoutContan2 > .LayoutMainContan footer {
+  position: fixed;
+}
+/* .LayoutContan2 > .LayoutMainContan > div > div[class~="ProductsLayoutLabel"] {
+  margin-top: 192px;
+} */
+
+.statham {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  animation: cubic-bezier(1, 0.5, 0.5, 1) go-top-statham 2s;
+  z-index: 1;
+}
+
+.stathamPhrase {
+  display: block;
+  position: absolute;
+  left: 115px;
+  bottom: 124px;
+  color: rgba(194, 208, 251, 0.6);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  animation: cubic-bezier(1, 0.5, 0.5, 1) go-top-phrase 2.1s;
+}
+.stathamArrow {
+  display: block;
+  position: absolute;
+  left: 221px;
+  bottom: 102px;
+  animation: cubic-bezier(1, 0.5, 0.5, 1) go-top-arrow 2.1s;
+}
+
+.NavButtonLink {
+  width: 65%;
+  max-width: 224px;
+}

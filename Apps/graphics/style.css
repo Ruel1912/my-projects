@@ -1,0 +1,179 @@
+canvas{
+    background-color: #eee;
+    border: 2px solid #6a6a6a;
+    cursor: crosshair;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0;
+    background: #c6c3ca;
+}
+
+h1 {
+    font-family: monospace;
+    letter-spacing: 2px;
+    text-shadow: 1px -1px 0 white;
+}
+
+input{
+    margin-top: 1rem;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.colors{
+    display: flex;
+    flex-flow: row wrap;
+    width: fit-content;
+    margin-top: 1rem;
+    box-shadow: 0 0 3px 1px #00000087;
+}
+
+.color{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    box-shadow: 0 0 3px 1px #00000082;
+    cursor: pointer;
+}
+
+#clear {
+    width: 324px;
+    font-size: 1.2rem;
+}
+
+#white{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: white;
+}
+#white:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #ebebeb;
+}
+#black{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: black;
+}
+#black:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #000000d9;
+}
+#red{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: red;
+}
+#red:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #c80202;
+}
+#green{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: green;
+}
+#green:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #026402;
+}
+#blue{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: blue;
+}
+#blue:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #0000d8eb;
+}
+#cyan{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: cyan;
+}
+#cyan:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #00c4c4;
+}
+#magenta{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: magenta;
+}
+#magenta:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #e000e0;
+}
+#yellow{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: yellow;
+}
+#yellow:hover{
+    transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -webkit-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -o-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -ms-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    -moz-transition: all 0.16s cubic-bezier(0.41, 0.03, 0.22, 0.97);
+    background-color: #c2c201;
+}

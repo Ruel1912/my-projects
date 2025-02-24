@@ -1,0 +1,471 @@
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 120px;
+  gap: 10px;
+  flex-grow: 1;
+  width: -webkit-fill-available;
+  background: #f1f3fb;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 1025px) {
+  .content {
+    position: relative !important;
+    background-color: #fff;
+    box-shadow: 0px -18px 18px 0px rgba(32, 51, 79, 0.12);
+  }
+}
+.content > img {
+  margin-bottom: 60px;
+  margin-top: -180px;
+}
+.content > h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.content > p {
+  color: #8f92a1;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.CardProductsBasket {
+  margin: 0 20px;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 14px;
+  padding: 10px 14px 10px 10px;
+}
+/* .CardProductsBasket * {
+  border: 1px solid
+} */
+.CardProductsBasket img {
+  border-radius: 18px;
+  width: 84px;
+  height: 104px;
+  object-fit: cover;
+}
+.MainContainCardProductsBasket {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 4px;
+
+  width: 100%;
+}
+.MainContainCardProductsBasket > p {
+  color: #2b2b2b;
+  font-size: 12px;
+  font-weight: 400;
+}
+.FunctionalCardComp {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FunctionalCardComp > div:first-child {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 2px;
+}
+
+.CartPrice {
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: 500;
+}
+.CartCount {
+  color: #8f92a1;
+  font-size: 10px;
+  font-weight: 400;
+}
+.CartCountButton {
+  border-radius: 46px;
+  background: #f1f3fb;
+  color: #000;
+  width: 102px;
+  height: 36px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.CartCountButton > button {
+  background: unset;
+  outline: unset;
+  border: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 36px;
+}
+.CartCountButton i {
+  font-size: 14px;
+  color: #2b2b2b;
+}
+.CartCountButton > span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.deleteButton {
+  border-radius: 27px;
+  background: #2b2b2b;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: -9px;
+}
+.deleteButton::before {
+  font-size: 16px;
+}
+
+.finally {
+  background: #fff;
+  border-radius: 28px 28px 0px 0px;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  margin-bottom: 0;
+  margin-top: 80px;
+}
+.finally i {
+  margin-top: 25%;
+  font-size: 158px;
+  color: #6b35f5;
+}
+.finally h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.finally p {
+  text-align: center;
+  color: #979797;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.TimeLine {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 68px;
+  margin-top: -10px;
+}
+.TimeLine > h6 {
+  color: #8f92a1;
+  font-size: 10px;
+  font-weight: 400;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+.TimeLine > .SwapeLine {
+  border-radius: 20px;
+  overflow-x: scroll;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 4px;
+}
+.SwapeLine > .TimePanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: unset;
+  min-width: 140px;
+  height: 40px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+
+  color: #2b2b2b;
+  font-size: 12px;
+  font-weight: 500;
+}
+.TimePanel.active {
+  border: 1px solid #6b35f5;
+}
+
+.bg {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}
+.panel {
+  position: fixed;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 28px 28px 0px 0px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 7px rgba(32, 51, 79, 0.18);
+  bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+}
+.swiper {
+  width: 60px;
+  height: 8px;
+  border-radius: 4.664px;
+  background: var(--Blue-2, #e1e6f7);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.popupHead {
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.headGroup {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 86px 1fr 86px;
+  width: 100%;
+  align-items: center;
+}
+.cancelButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 86px;
+  height: 28px;
+  border-radius: 1000px;
+  background: #e1e6f7;
+  color: #6b35f5;
+  font-size: 14px;
+  font-weight: 500;
+}
+.closeButton {
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: unset;
+  background: none;
+}
+.closeButton > i {
+  color: #6b35f5;
+  font-size: 22px;
+}
+
+.dayLine {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  margin-top: 18px;
+  border-radius: 10px;
+}
+.dayLine > button {
+  white-space: nowrap;
+  border-radius: 14px;
+  height: 32px;
+  padding: 4px 10px 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #f1f3fb;
+  border: none;
+  color: #8f92a1;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dayLine > button.active {
+  background: #6b35f5;
+  color: #fff;
+}
+.popupMain {
+  display: flex;
+  flex-flow: column;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 24px;
+  margin-bottom: 120px;
+}
+.popupMainText {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.timeButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  border-bottom: solid 1px #8f92a133;
+  padding: 10px 0;
+  height: 40px;
+}
+.timeButton > span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.timeButton > span.active {
+  color: #6b35f5;
+}
+
+.timeButton > i {
+  font-size: 20px;
+  color: #6b35f5;
+}
+.popupMainButtonContain {
+  display: flex;
+  padding: 14px 14px 20px 24px;
+  margin-left: -20px;
+  width: 70vw;
+  max-width: 1024px;
+}
+.popupMainButtonContainTime {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+@media (max-width: 1024px) {
+  .popupMainButtonContain {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.popupMainButtonContain > div {
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+  margin-right: 12px;
+  min-width: 100px;
+}
+
+.popupMainButtonContain > div > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  white-space: nowrap;
+}
+
+.popupMainButtonContain > div > span {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+}
+button.unactive {
+  color: #8f92a1;
+  background: #f1f3fb;
+  box-shadow: unset;
+  cursor: default;
+}
+.popupTitle {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popupTitle button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: unset;
+  background: none;
+}
+.popupTitle button > i {
+  color: #6b35f5;
+}
+.popupTitle i {
+  font-size: 18px;
+}
+.popupInput {
+  width: 100%;
+  padding: 18px 27px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.56);
+
+  box-shadow: 0px 0px 4px 0px rgba(32, 51, 79, 0.2) inset;
+  color: #2b2b2b;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button.err {
+  border: 1px solid #2b2b2b !important;
+}
+
+.titleButtomPopup > h4 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.64px;
+}
+.titleButtomPopup > span {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.91px;
+}
+.Footer {
+  display: flex;
+  flex-flow: column nowrap;
+
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+
+  width: 100%;
+  max-width: 1024px;
+  padding: 12px 14px 24px 14px;
+
+  background-color: #fff;
+  border-radius: 28px 28px 0px 0px;
+  box-shadow: 0px 1px 12px 4px rgba(32, 51, 79, 0.18);
+}
+
+.finalButtonHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px 10px 10px;
+}
+
+.finalButtonHead > i {
+  font-size: 18px;
+}
+.finalButtonHead > i:last-child {
+  font-size: 14px;
+}
+
+.finalButtonHead > span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 106%;
+  letter-spacing: -0.84px;
+}

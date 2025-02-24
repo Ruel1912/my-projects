@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #010101;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+}
+
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.black {
+  background: deepskyblue;
+}
+
+.board__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.white {
+  background: #eed4ac;
+}
+
+.selected {
+  background: brown;
+}
+
+.available {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #22c822;
+}
+
+.lost {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.lost__wrap {
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: lightslategray;
+  text-align: center;
+}
+
+.lost h3 {
+  margin-bottom: 20px;
+}
+
+.lost__figure {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.timer {
+  width: fit-content;
+  margin-right: 30px;
+  padding: 20px 40px;
+  background: cadetblue;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.timer button {
+  padding: 5px 10px;
+  border: none;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  width: fit-content;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+}
+
+.timer button:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}

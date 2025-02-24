@@ -1,0 +1,146 @@
+.PopupHelp {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  border-radius: 16px;
+  background: #DDFD4F;
+  padding: 16px 14px 10px;
+}
+.PopupHelp > div > i {
+  font-size: 20px;
+}
+
+.PopupHelp > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.PopupHelp > div > h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.PopupHelp > p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120.5%; /* 14.46px */
+}
+
+.Panel {
+  margin-top: 24px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  border-radius: 28px;
+}
+
+.InputPanel {
+  display: flex;
+  padding: 8px 18px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.12);
+  gap: 14px;
+  align-items: center;
+  height: 60px;
+}
+.InputPanel > i {
+  font-size: 22px;
+  color: #6B35F5;
+}
+.InputPanel > input {
+  border-radius: 24px;
+  background: #f9fafd;
+  padding: 0px 14px;
+  box-shadow: 0px 0px 4px 0px rgba(32, 51, 79, 0.18) inset;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  outline: unset;
+  border: unset;
+}
+
+.Panel > * {
+  width: 100%;
+}
+.Panel > h6 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 106%;
+}
+
+.Panel > textarea {
+  display: flex;
+  width: 100%;
+  height: 140px;
+  padding: 15px 14px 18px 14px;
+  gap: 8px;
+  border-radius: 24px;
+  background: #f9fafd;
+  box-shadow: 0px 0px 4px 0px rgba(32, 51, 79, 0.18) inset;
+  font-size: 12px;
+  font-weight: 500;
+  resize: none;
+  border: unset;
+}
+.MainContain {
+  margin-top: 64px;
+  border-radius: 28px 28px 0px 0px;
+  background: #fff;
+  box-shadow: 0px -18px 18px 0px rgba(32, 51, 79, 0.12);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-grow: 1;
+}
+.MainContain h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.applyButton {
+  width: 100%;
+  padding: 20px;
+  border-radius: 28px 28px 0px 0px;
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 12px 4px rgba(32, 51, 79, 0.08);
+
+  position: fixed;
+  bottom: 0;
+}
+@media (min-width:1025px) {
+  .applyButton{
+    width: -webkit-fill-available;
+    margin-left: 42px;
+    margin-right: 42px;
+    max-width: 1024px;
+  }
+}
+
+.fileInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  cursor: pointer;
+  height: 40px;
+  padding: 10px 16px 10px 12px;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 16px;
+  border: 1px solid rgba(143, 146, 161, 0.3);
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0px 0px 12px 0px rgba(32, 51, 79, 0.04);
+}
+.fileInput i {
+  font-size: 16px;
+  color: #6B35F5;
+}
+.fileInput input[type="file"] {
+  width: 0px;
+  z-index: -1;
+}

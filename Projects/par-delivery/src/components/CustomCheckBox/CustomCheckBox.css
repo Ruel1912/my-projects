@@ -1,0 +1,25 @@
+.CustomCheckBox{
+    display: flex;
+    flex-flow: nowrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .CustomCheckBox > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #67696D;
+  }
+  .CustomCheckBox > i{
+    font-size: 10px;
+    font-weight: 500;
+    padding:  3px 3px 3px 3px;
+    border-radius: 6px;
+    border: 1px solid #6B35F5;
+    color:#fff;
+    background: #FFF;
+  }
+  
+  .CustomCheckBox.active > i{
+    background: #6B35F5;
+  }

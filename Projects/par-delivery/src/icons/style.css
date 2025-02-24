@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Parmarket_Ico';
+  src:  url('fonts/Parmarket_Ico.eot?co4kxb');
+  src:  url('fonts/Parmarket_Ico.eot?co4kxb#iefix') format('embedded-opentype'),
+    url('fonts/Parmarket_Ico.ttf?co4kxb') format('truetype'),
+    url('fonts/Parmarket_Ico.woff?co4kxb') format('woff'),
+    url('fonts/Parmarket_Ico.svg?co4kxb#Parmarket_Ico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Parmarket_Ico' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic_Close-Square1:before {
+  content: "\e93b";
+}
+.ic_Scan:before {
+  content: "\e93a";
+}
+.ic_Paper-Plus:before {
+  content: "\e938";
+}
+.ic_Arrow-Reload:before {
+  content: "\e931";
+}
+.ic_Wallet:before {
+  content: "\e90f";
+}
+.ic_Apply-Ring:before {
+  content: "\e939";
+}
+.ic_Image:before {
+  content: "\e937";
+}
+.ic_Ticket:before {
+  content: "\e936";
+}
+.ic_Arrow-Right-Full:before {
+  content: "\e935";
+}
+.ic_Car:before {
+  content: "\e934";
+}
+.ic_Arrow-Close-Circle:before {
+  content: "\e932";
+}
+.ic_Arrow---Left-2:before {
+  content: "\e933";
+}
+.ic_Arrow-Left-Full:before {
+  content: "\e930";
+}
+.ic_Message:before {
+  content: "\e92f";
+}
+.ic_Calling:before {
+  content: "\e92d";
+}
+.ic_Discount:before {
+  content: "\e92e";
+}
+.ic_Buy:before {
+  content: "\e903";
+}
+.ic_Arrow-Up-Full:before {
+  content: "\e900";
+}
+.ic_Clock:before {
+  content: "\e901";
+}
+.ic_Arrow-Right-1:before {
+  content: "\e902";
+}
+.ic_Bag:before {
+  content: "\e904";
+}
+.ic_Calendar:before {
+  content: "\e905";
+}
+.ic_Call:before {
+  content: "\e906";
+}
+.ic_Category:before {
+  content: "\e907";
+}
+.ic_Chat:before {
+  content: "\e908";
+}
+.ic_Close-Square:before {
+  content: "\e909";
+}
+.ic_Danger-Circle:before {
+  content: "\e90a";
+}
+.ic_Danger-Triangle:before {
+  content: "\e90b";
+}
+.ic_Delete:before {
+  content: "\e90c";
+}
+.ic_Edit:before {
+  content: "\e90d";
+}
+.ic_Apply:before {
+  content: "\e90e";
+}
+.ic_Filters:before {
+  content: "\e910";
+}
+.ic_Sad-Bag:before {
+  content: "\e911";
+}
+.ic_Heart:before {
+  content: "\e912";
+}
+.ic_Home:before {
+  content: "\e913";
+}
+.ic_Phone:before {
+  content: "\e914";
+}
+.ic_Location:before {
+  content: "\e915";
+}
+.ic_Lock:before {
+  content: "\e916";
+}
+.ic_Logout:before {
+  content: "\e917";
+}
+.ic_Login:before {
+  content: "\e918";
+}
+.ic_Paper:before {
+  content: "\e919";
+}
+.ic_Password:before {
+  content: "\e91a";
+}
+.ic_Profile:before {
+  content: "\e91b";
+}
+.ic_Search:before {
+  content: "\e91c";
+}
+.ic_Shield-Done:before {
+  content: "\e91d";
+}
+.ic_Tg:before {
+  content: "\e91e";
+}
+.ic_Swap:before {
+  content: "\e91f";
+}
+.ic_Tick-Square:before {
+  content: "\e920";
+}
+.ic_Plus:before {
+  content: "\e921";
+}
+.ic_Unlock:before {
+  content: "\e922";
+}
+.ic_Vk:before {
+  content: "\e923";
+}
+.ic_See:before {
+  content: "\e924";
+}
+.ic_Not-See:before {
+  content: "\e925";
+}
+.ic_Liner:before {
+  content: "\e926";
+}
+.ic_call:before {
+  content: "\e927";
+}
+.ic_Users:before {
+  content: "\e928";
+}
+.ic_Arrow-Down:before {
+  content: "\e929";
+}
+.ic_Arrow-Up:before {
+  content: "\e92a";
+}
+.ic_Arrow-Right:before {
+  content: "\e92b";
+}
+.ic_Full-Heard:before {
+  content: "\e92c";
+}

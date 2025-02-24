@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f1f3fb;
+  height: 100svh;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  height: auto;
+}
+.content > img {
+  margin-bottom: 60px;
+  margin-top: -180px;
+}
+.content > h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.content > p {
+    color:#8F92A1;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+  }

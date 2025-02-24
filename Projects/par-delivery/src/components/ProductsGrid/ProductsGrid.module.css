@@ -1,0 +1,167 @@
+.ProductsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 180px);
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+  margin-top: 14px;
+  margin-bottom: 210px;
+  padding: 0 20px;
+}
+
+.ProductsCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #f1f3fb;
+  border-radius: 24px;
+  width: 180px;
+  max-height: 350px;
+}
+
+.ProductsCard > img {
+  margin: 6px 6px 0;
+  border-radius: 24px;
+  object-fit: cover;
+  width: 168px;
+  height: 194px;
+  min-height: 194px;
+}
+
+.ProductsCard > .ProductPrice {
+  display: flex;
+  width: 100%;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.ProductsCard > .ProductPrice > div {
+  display: flex;
+  gap: 4px;
+  margin-left: 12px;
+}
+.ProductsCard > .ProductPrice > div > h4 {
+  min-width: min-content;
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.ProductsCard > .ProductPrice > div > span {
+  color: #8f92a1;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 3px;
+  align-self: flex-end;
+}
+.ProductsCard > .ProductPrice > button {
+  border: unset;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: unset;
+  margin-right: 14px;
+}
+.ProductsCard > .ProductPrice > button > i {
+  color: #6B35F5;
+  font-size: 20px;
+}
+
+.ProductsCard > p {
+  color: #2b2b2b;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: left;
+  width: 100%;
+  line-height: 1.3;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.ProductsCard .ButtonContain {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 6px;
+}
+
+.StickerNew {
+  z-index: 0;
+  display: flex;
+  position: relative;
+  align-self: start;
+  margin-left: 16px;
+  margin-top: -24px;
+  margin-bottom: 10px;
+  transform: rotate(-6deg);
+  padding: 0px 6px 2px 6px;
+
+  background: #DDFD4F;
+  color: #6B35F5;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.mathButton {
+  border: unset;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: unset;
+  outline: unset;
+}
+
+.mathButton:active {
+  outline: none;
+}
+.mathButton:last-child {
+  justify-content: end;
+}
+
+@media (max-width: 480px) {
+  .ProductsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+
+  .ProductsCard {
+    width: 100%;
+  }
+
+  .ProductsCard > img {
+    width: calc(100% - 10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: -50% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #e6e6e6 25%, #f5f5f5 50%, #e6e6e6 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}

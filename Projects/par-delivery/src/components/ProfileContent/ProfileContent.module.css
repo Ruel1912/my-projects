@@ -1,0 +1,124 @@
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  height: auto;
+  background-color: #f1f3fb;
+}
+
+.content > img {
+  margin-bottom: 60px;
+  margin-top: -180px;
+}
+.content > h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.content > p {
+  color: #8f92a1;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.panel {
+  color: #fff;
+  border-radius: 24px 24px 0 0;
+  margin-top: 160px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.12);
+  flex-grow: 1;
+  padding: 20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 14px;
+}
+@media (min-width:1025px) {
+  .content {
+    background-color: #fff;
+  }
+  .panel{
+    margin-top: 60px;
+  }
+}
+.panelHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: -52px;
+  margin-bottom: 10px;
+}
+.catContain {
+  border-radius: 40px;
+  background: #2B2B2B;
+  width: 94px;
+  height: 94px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 5px;
+}
+.panelHello {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.panelHello > i {
+  font-size: 26px;
+  color: #c2d0fb;
+  margin-left: 16px;
+}
+.panelHello h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 157.523%;
+}
+.panelHello p {
+  color: #8f92a1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 157%;
+}
+
+.socialLnk {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 12px;
+}
+.socialLnk > div{
+    display: flex;
+    gap: 2px;
+}
+.socialLnk > span {
+  color: #8f92a1;
+  font-size: 12px;
+  font-weight: 600;
+  /* margin-left: 20px; */
+}
+.socialCard {
+  display: flex;
+  height: 38px;
+  padding: 18px 12px;
+  align-items: center;
+  gap: 6px;
+
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0px 1px 12px 0px rgba(32, 51, 79, 0.08);
+}
+.socialCard > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.socialCard > i {
+  font-size: 18px;
+}
+.Vk > * {
+  color: #6B35F5;
+}
