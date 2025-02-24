@@ -27,29 +27,26 @@ Frontend Developer | 20 y.o. | Moscow
 
 # ⚡︎ Проекты
 
-![Автоматизированная Информационная Система (доступно для работы только для Министерства Образования Московской Области)](https://idschool.idte.ru)
-![Интерактивная база знаний](https://cyclegramm.idte.ru)
-![Продажа курса с личным кабинетом](https://topbfl.ru)
-![Интернет-магазин](https://pardelivery.ru)
-![Сборник рецептов](https://ruel1912.github.io/corus)
-![Шахматы](https://ruel1912.github.io/chess)
+[Автоматизированная Информационная Система (доступно для работы только для Министерства Образования Московской Области)](https://idschool.idte.ru)
+[Интерактивная база знаний](https://cyclegramm.idte.ru)
+[Продажа курса с личным кабинетом](https://topbfl.ru)
+[Интернет-магазин](https://pardelivery.ru)
+[Сборник рецептов](https://ruel1912.github.io/corus)
+[Шахматы](https://ruel1912.github.io/chess)
 
 # ⚡︎ Задачи
-
-![Тренажер точности](https://ruel1912.github.io/my-projects/Apps/aim)
-![Графический редактор](https://ruel1912.github.io/my-projects/Apps/graphics)
-![Hover доска](https://ruel1912.github.io/my-projects/Apps/board)
-![Слайд-шоу](https://ruel1912.github.io/my-projects/Apps/slider)
-![Перенос элементов](https://ruel1912.github.io/my-projects/Apps/dragNdrop)
-![Галерея](https://ruel1912.github.io/my-projects/Apps/gallery)
+[Тренажер точности](https://ruel1912.github.io/my-projects/Apps/aim)
+[Графический редактор](https://ruel1912.github.io/my-projects/Apps/graphics)
+[Hover доска](https://ruel1912.github.io/my-projects/Apps/board)
+[Слайд-шоу](https://ruel1912.github.io/my-projects/Apps/slider)
+[Перенос элементов](https://ruel1912.github.io/my-projects/Apps/dragNdrop)
+[Галерея](https://ruel1912.github.io/my-projects/Apps/gallery)
 
 # Вёрстка
-
-![Игровой сайт](https://ruel1912.github.io/my-projects/Sites/csgo)
-![Сайт визитка](https://ruel1912.github.io/my-projects/Sites/gamingSite)
-![Продающий сайт](https://ruel1912.github.io/my-projects/Sites/telphy)
+[Игровой сайт](https://ruel1912.github.io/my-projects/Sites/csgo)
+[Сайт визитка](https://ruel1912.github.io/my-projects/Sites/gamingSite)
+[Продающий сайт](https://ruel1912.github.io/my-projects/Sites/telphy)
 
 # CSS
-
-![Интерсный способ отобразить картинку](https://ruel1912.github.io/my-projects/CSS/animation)
-![Шпаргалка по flex](https://ruel1912.github.io/my-projects/CSS/flex)
+[Интерсный способ отобразить картинку](https://ruel1912.github.io/my-projects/CSS/animation)
+[Шпаргалка по flex](https://ruel1912.github.io/my-projects/CSS/flex)
