@@ -41,7 +41,7 @@ html, body {
     position: absolute;
     width: 100%;
     height: 90px;
-    background-image: url(https://www.culture.ru/storage/images/210fd1ca-3c8f-5d59-b6ba-8d6a15d5c633);
+    background-image: url('photo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
