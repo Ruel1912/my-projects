@@ -14,6 +14,7 @@ Frontend Developer | 20 лет | Москва
 * [Продажа курса с личным кабинетом](https://topbfl.ru)
 * [Интернет-магазин](https://pardelivery.ru)
 * [Интернет-магазин (React + NodeJS)](https://github.com/Ruel1912/netology-shop)
+* [Федеральное Арбитражное бюро](https://fablaw.ru)
 * [Сборник рецептов](https://ruel1912.github.io/corus)
 * [Шахматы](https://ruel1912.github.io/chess)
 
