@@ -1,5 +1,6 @@
-# 💫 Обо мне:
+<img src='https://avatars.githubusercontent.com/u/74548409?v=4' style="height: 400px;"/>
 
+# 💫 Обо мне:
 Frontend Developer | 20 лет | Москва
 
 # 💻 Навыки:
