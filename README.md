@@ -16,7 +16,7 @@ Frontend Developer | 20 лет | Москва
   <li><a href="https://topbfl.ru" target="_blank">Продажа курса с личным кабинетом</a></li>
   <li><a href="https://pardelivery.ru" target="_blank">Интернет-магазин</a></li>
   <li><a href="https://github.com/Ruel1912/netology-shop" target="_blank">Интернет-магазин обуви</a></li>
-  <li><a href="https://tuman.io" target="_blank">Онлайн гемблинг</a></li>
+  <li><a href="https://tuman.io" target="_blank">Онлайн гемблинг. Tuman Project</a></li>
   <li><a href="https://myforce.ru" target="_blank">Экосистема для предпринимателей</a></li>
   <li><a href="https://долг-списать.online" target="_blank">Банкротство физических лиц</a></li>
   <li><a href="https://smartswim.ru" target="_blank">Школа плавания с онлайн-оплатой</a></li>
