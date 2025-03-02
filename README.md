@@ -14,9 +14,14 @@ Frontend Developer | 20 лет | Москва
 * [Продажа курса с личным кабинетом](https://topbfl.ru)
 * [Интернет-магазин](https://pardelivery.ru)
 * [Интернет-магазин (React + NodeJS)](https://github.com/Ruel1912/netology-shop)
-* [Федеральное Арбитражное бюро](https://fablaw.ru)
+* [Онлайн гемблинг](https://tuman.io)
+* [Экосистема для предпринимателей](https://myforce.ru)
+* [Банкротство физических лиц](https://долг-списать.online)
+* [Школа плавания с онлайн-оплатой](https://smartswim.ru)
 * [Сборник рецептов](https://ruel1912.github.io/corus)
-* [Шахматы](https://ruel1912.github.io/chess)
+* [Единая Юридическая Служба Помощи](https://еюсп.рф)
+* [Игра "В мире финансов"](https://https://fingames.idte.ru)
+* [Федеральное Арбитражное бюро](https://fablaw.ru)
 
 # ⚡︎ Задачи
 * [Тренажер точности](https://ruel1912.github.io/my-projects/Apps/aim)
@@ -27,11 +32,13 @@ Frontend Developer | 20 лет | Москва
 * [Галерея](https://ruel1912.github.io/my-projects/Apps/gallery)
 * [Планировщик заданий](https://ruel1912.github.io/todo-app)
 * [Курсы валют](https://ruel1912.github.io/currency-rates/)
+* [Шахматы](https://ruel1912.github.io/chess)
 
 # Вёрстка
 * [Игровой сайт](https://ruel1912.github.io/my-projects/Sites/csgo)
 * [Продающий сайт](https://ruel1912.github.io/my-projects/Sites/telphy)
 * [Сайт визитка](https://ruel1912.github.io/my-projects/Sites/gamingSite)
+* [Вправе](https://vprave-rnd.ru/)
 
 # CSS
 * [Интерсный способ отобразить картинку](https://ruel1912.github.io/my-projects/CSS/animation)
