@@ -35,8 +35,8 @@ Frontend Developer | 20 лет | Москва
 * [Шахматы](https://ruel1912.github.io/chess)
 
 # Вёрстка
-* [Игровой сайт](https://ruel1912.github.io/my-projects/Sites/csgo)
-* [Продающий сайт](https://ruel1912.github.io/my-projects/Sites/telphy)
+* [Сервер CS:GO](https://ruel1912.github.io/my-projects/Sites/csgo)
+* [Telphy](https://ruel1912.github.io/my-projects/Sites/telphy)
 * [Сайт визитка](https://ruel1912.github.io/my-projects/Sites/gamingSite)
 * [Вправе](https://vprave-rnd.ru/)
 
